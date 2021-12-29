@@ -72,7 +72,7 @@ public class FlappyBird extends ApplicationAdapter {
 
 		maxTubeOffset = Gdx.graphics.getHeight() / 2 - gap / 2 - 100;
 		randomGenerator = new Random();
-		distanceBetweenTheTube = Gdx.graphics.getWidth() * 3 / 4;
+		distanceBetweenTheTube = Gdx.graphics.getWidth() * 5/ 4;
 		topTubeRectangles = new Rectangle[numberOfTubes];
 		bottomTubeRectangles = new Rectangle[numberOfTubes];
 
@@ -115,7 +115,7 @@ public class FlappyBird extends ApplicationAdapter {
 
 			if (Gdx.input.justTouched()) {
 
-				velocity = -30;
+				velocity = -17;
 
 			}
 			for (int i = 0; i < numberOfTubes; i++) {
