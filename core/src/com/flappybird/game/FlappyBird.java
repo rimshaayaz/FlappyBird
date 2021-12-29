@@ -168,7 +168,7 @@ public class FlappyBird extends ApplicationAdapter {
 
 		batch.draw(birds[flapState], Gdx.graphics.getWidth() / 2 - birds[flapState].getWidth() / 2, birdY);
 		font.draw(batch , String.valueOf(score) , 100 , 200);
-		
+
 		batch.end();
 
 		birdCircle.set(Gdx.graphics.getWidth() / 2, birdY + birds[flapState].getHeight() / 2, birds[flapState].getWidth() / 2);
@@ -183,17 +183,5 @@ public class FlappyBird extends ApplicationAdapter {
 				gameState = 2;
 			}
 		}
-
-
-
-
-}
-
-
-
-
-
-
-
-
+	}
 }
