@@ -32,7 +32,7 @@ public class FlappyBird extends ApplicationAdapter {
 		}
 		batch.begin();
 		batch.draw(background,0,0, Gdx.graphics.getWidth(),Gdx.graphics.getHeight());
-		batch.draw(birds[flapState],Gdx.graphics.getWidth()/2-birds[flapState].getWidth()/2,Gdx.graphics.getHeight()/2-birds.getHeight()/2);
+		batch.draw(birds[flapState],Gdx.graphics.getWidth()/2-birds[flapState].getWidth()/2,Gdx.graphics.getHeight()/2-birds[flapState].getHeight()/2);
 		batch.end();
 	}
 	
