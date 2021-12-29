@@ -63,25 +63,10 @@ public class FlappyBird extends ApplicationAdapter {
 		font = new BitmapFont();
 		font.setColor(Color.WHITE);
 		font.getData().setScale(10);
-//hellooooo
-
-
-
-		//pppppppp
 
 
 
 
-		topTube = new Texture("toptube.png");
-		bottomTube = new Texture("bottomtube.png");
-
-		maxTubeOffset = Gdx.graphics.getHeight() / 2 - gap / 2 - 100;
-		randomGenerator = new Random();
-		distanceBetweenTheTube = Gdx.graphics.getWidth() * 3 / 4;
-		topTubeRectangles = new Rectangle[numberOfTubes];
-		bottomTubeRectangles = new Rectangle[numberOfTubes];
-
-		startGame();
 
 
 	}
