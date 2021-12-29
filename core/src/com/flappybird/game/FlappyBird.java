@@ -52,17 +52,25 @@ public class FlappyBird extends ApplicationAdapter {
 	public void create() {
 		batch = new SpriteBatch();
 		background = new Texture("bg.png");
-		gameover = new Texture("gameover.png");
+	//	gameover = new Texture("gameover.png");
 		//shapeRenderer = new ShapeRenderer();
 		birdCircle = new Circle();
 
 		birds = new Texture[2];
-		birds[0] = new Texture("bird.png");
+		birds[0] = new Texture("bird1.png");
 		birds[1] = new Texture("bird2.png");
 
 		font = new BitmapFont();
 		font.setColor(Color.WHITE);
 		font.getData().setScale(10);
+//hellooooo
+
+
+
+		//pppppppp
+
+
+
 
 		topTube = new Texture("toptube.png");
 		bottomTube = new Texture("bottomtube.png");
@@ -198,4 +206,4 @@ public class FlappyBird extends ApplicationAdapter {
 
 		//shapeRenderer.end();
 
-}
+}}
