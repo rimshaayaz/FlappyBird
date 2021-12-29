@@ -53,7 +53,7 @@ public class FlappyBird extends ApplicationAdapter {
 		batch = new SpriteBatch();
 		background = new Texture("bg.png");
 		gameover = new Texture("gameover.png");
-		//shapeRenderer = new ShapeRenderer();
+
 		birdCircle = new Circle();
 
 		birds = new Texture[2];
