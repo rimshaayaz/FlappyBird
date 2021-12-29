@@ -138,14 +138,12 @@ public class FlappyBird extends ApplicationAdapter {
 				velocity = velocity + gravity;
 				birdY -= velocity;
 			}else{
-
 				gameState = 2; //2 is the game over state
 			}
 		} else if(gameState==0){
 
 			if (Gdx.input.justTouched())
-			{
-				gameState = 1;
+			{ gameState = 1;
 			}
 
 		}else if(gameState==2)
@@ -159,23 +157,18 @@ public class FlappyBird extends ApplicationAdapter {
 				score =0;
 				scoringTube=0;
 				velocity = 0;
-
-
 			}
 
 		}
-
 		if (flapState == 0) {
 			flapState = 1;
 		} else {
 			flapState = 0;
 		}
 
-
 		batch.draw(birds[flapState], Gdx.graphics.getWidth() / 2 - birds[flapState].getWidth() / 2, birdY);
 		font.draw(batch , String.valueOf(score) , 100 , 200);
-
-
+		
 		batch.end();
 
 		birdCircle.set(Gdx.graphics.getWidth() / 2, birdY + birds[flapState].getHeight() / 2, birds[flapState].getWidth() / 2);
