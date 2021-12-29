@@ -187,8 +187,6 @@ public class FlappyBird extends ApplicationAdapter {
 
 		for (int i = 0; i < numberOfTubes; i++) {
 
-			//shapeRenderer.rect(tubeX[i],Gdx.graphics.getHeight() / 2 + gap / 2 + tubeOffset[i],topTube.getWidth(),topTube.getHeight());
-			//shapeRenderer.rect(tubeX[i],Gdx.graphics.getHeight() / 2 - gap / 2 - bottomTube.getHeight() + tubeOffset[i], bottomTube.getWidth(),bottomTube.getHeight());
 
 			if (Intersector.overlaps(birdCircle, topTubeRectangles[i]) || Intersector.overlaps(birdCircle, bottomTubeRectangles[i])) {
 
@@ -197,6 +195,15 @@ public class FlappyBird extends ApplicationAdapter {
 		}
 
 
-		//shapeRenderer.end();
 
-}}
+
+}
+
+
+
+
+
+
+
+
+}
